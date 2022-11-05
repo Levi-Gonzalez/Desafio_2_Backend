@@ -44,7 +44,7 @@ class Contenedor {
     async deleteAll(){
         try {
             await fs.writeFile(this.path , JSON.stringify([], null , 2), "utf-8")
-        } catch (e){
+        } catch (e){ 
             console.log(e);
         }
     }
